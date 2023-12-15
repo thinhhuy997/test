@@ -11,6 +11,7 @@ from app.api.v1.endpoints import (
     weather,
     report,
     periodic_tasks,
+    product
 )
 
 api_router = APIRouter()
@@ -29,3 +30,6 @@ api_router.include_router(
 api_router.include_router(
     periodic_tasks.router, prefix="/periodic_tasks", tags=["periodic_tasks"]
 )
+
+# NEW
+api_router.include_router(product.router, prefix="/product", tags=["product"])

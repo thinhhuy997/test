@@ -6,6 +6,8 @@ from .group_model import Group
 from .media_model import Media
 from .image_media_model import ImageMedia
 from .user_follow_model import UserFollow
-
 # New
-from .product_model import Product
+# from .product_model import Product
+from .album_model import Album
+from .track_model import Track
+
